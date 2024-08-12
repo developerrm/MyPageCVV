@@ -1,6 +1,7 @@
 :root{
 --colorPrincipal : #690000;
---colorSecundario : #92007a;
+--colorBlanco : #ffffff;
+--colorSecundario : #000000;
 }
 html{
     font-size: 62.5%;
@@ -19,11 +20,24 @@ h1 {
         font-size: 2rem;
     }
 .navegacion-principal{
-   
+    display: flex;
+    justify-content: space-between;
 }
+.navegacion-principal a {
+    color: var(--colorBlanco);
+    padding: 1rem;
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: bold;
+ }
+ .navegacion-principal a:hover {
+  background-color: rgb(245, 245, 24);   
+  color: var(--colorSecundario);
+  }
 .contenedor{
     width: 120rem; 
-    margin: 0 auto;
+    margin: 0 auto;   
+    
 }
 .nav-bg{
     background-color: var(--colorSecundario) ;
